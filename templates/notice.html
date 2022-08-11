@@ -1,0 +1,7 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>{% block title %} {{ notice['title'] }} {% endblock %}</h2>
+    <span class="badge badge-primary">{{ notice['created'] }}</span>
+    <p>{{ notice['content'] }}</p>
+{% endblock %}
